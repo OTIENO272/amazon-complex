@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amazon Project</title>
+
+    <!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Load a font called Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Here are the CSS files for this page. -->
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/amazon-header.css">
+    <link rel="stylesheet" href="styles/pages/amazon.css">
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,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 ">
+
+  </head>
+  <body>
+    <div class="amazon-header">
+      <div class="amazon-header-left-section">
+        <a href="index.html" class="header-link">
+          <img class="amazon-logo"
+            src="images/amazon-logo-white.png">
+          <img class="amazon-mobile-logo"
+            src="images/amazon-mobile-logo-white.png">
+        </a>
+      </div>
+
+      <div class="amazon-header-middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+
+        <button class="search-button">
+          <img class="search-icon" src="images/icons/search-icon.png">
+        </button>
+      </div>
+
+      <div class="amazon-header-right-section">
+        <a class="orders-link header-link" href="orders.html">
+          <span class="returns-text">Returns</span>
+          <span class="orders-text">& Orders</span>
+        </a>
+
+        <a class="cart-link header-link" href="checkout.html">
+          <img class="cart-icon" src="images/icons/cart-icon.png">
+          <div class="cart-quantity  js-cart-quantity">0</div>
+          <div class="cart-text">Cart</div>
+        </a>
+      </div>
+    </div>
+    
+    <div class="main">
+      <div class="products-grid js-products-grid">
+        
+      </div>
+    </div>
+  
+    <script type = "module" src="scripts/amazon.js" ></script>
+ 
+  </body>
+</html>
